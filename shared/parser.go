@@ -339,8 +339,7 @@ func parse(argList []string) parserResult {
 			argList = argList[1+listShift:]
 		}
 	}
-	argList = append(argList, "-O0")
-	argList = append(argList, "-g")
+	pr.CompileArgs = append(pr.CompileArgs, "-O0", "-g")
 	return pr
 }
 
