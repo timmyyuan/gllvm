@@ -340,6 +340,7 @@ func parse(argList []string) parserResult {
 		}
 	}
 	argList = append(argList, "-O0")
+	argList = append(argList, "-g")
 	return pr
 }
 
