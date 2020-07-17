@@ -339,6 +339,7 @@ func parse(argList []string) parserResult {
 			argList = argList[1+listShift:]
 		}
 	}
+	argList = append(argList, "-O0")
 	return pr
 }
 
